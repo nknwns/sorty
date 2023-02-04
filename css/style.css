@@ -1,0 +1,233 @@
+.panel.max-h {
+    height: 75vh;
+}
+
+main {
+    display: flex!important;
+    align-items: center;
+    height: 100vh;
+}
+
+.home {
+    width: 60vw;
+    margin: 0 auto;
+}
+
+@media (max-width: 840px) {
+    .home {
+        width: 100vw;
+    }
+
+    main {
+        height: auto;
+        padding: 10px 0;
+    }
+}
+
+.message {
+    position: relative;
+}
+
+.message-header {
+    margin-bottom: .3rem;
+}
+
+.message-field {
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.panel-header {
+    position: relative;
+}
+
+.channel-favorite {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+}
+
+.message-self .message-author::after {
+    content: 'Вы';
+    font-size: 14px;
+    font-weight: 400;
+    margin-left: 2px;
+    color: #79828f;
+}
+
+.message .message-tag {
+    padding: 0.1rem 0.2rem;
+    text-decoration: none;
+    color: inherit;
+    margin-left: 5px;
+
+    transition-property: color, background-color;
+    transition-timing-function: ease, ease;
+    transition-duration: .5s, .5s;
+}
+.message .message-tag:hover {
+    background-color: #3a38d2;
+    color: #fff;
+}
+
+
+.message .message-hidden {
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-size: 12px;
+}
+
+.empty {
+    background-color: transparent!important;
+}
+
+.channel {
+    padding: 10px;
+    border-bottom: 1px solid #bcc3ce;
+    gap: 10px;
+}
+
+.avatar {
+    font-weight: 500!important;
+}
+
+.menu-item .badge::after {
+    right: -0.1rem!important;
+    top: 0!important;
+}
+
+.field.active {
+    color: #fff;
+}
+
+.tag {
+    margin-bottom: 10px;
+}
+
+.tag .btn {
+    width: 100%;
+}
+
+.hidden {
+    display: none;
+}
+
+.channel .tile-content {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.tag-header {
+    display: flex;
+    gap: 5px;
+    margin: 0!important;
+}
+
+.tag .btn-delete {
+    height: 36px;
+}
+
+.field .label {
+    font-weight: 500!important;
+}
+
+.channel.active {
+    background-color: #5755d9;
+    color: #fff;
+}
+
+.channel.active .chip {
+    color: #3b4351;
+}
+
+.messages-options {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    display: flex;
+    gap: 5px;
+}
+
+.channel.active .btn-action {
+    color: #fff;
+}
+
+.channel.active .btn-action:hover {
+    color: #d0d0d0;
+}
+
+.channel.active .channel-message {
+    color: #fff;
+}
+
+.channel.active .avatar {
+    background-color: #fff!important;
+    color: #3b4351;
+}
+
+.channel.active .channel-title .channel-link {
+    color: #fff;
+}
+
+.channel.active .channel-link:hover {
+    color: #d0d0d0;
+}
+
+.channel-title {
+    display: inline-flex;
+    gap: 5px;
+    align-items: center;
+}
+
+.channel-title .channel-link {
+    font-size: 18px;
+    color: #3b4351;
+}
+
+.channel-title a:hover {
+    color: #5755d9;
+    text-decoration: none;
+}
+
+.channel-title .chip {
+    font-weight: 500;
+    font-size: 12px;
+}
+
+.toast {
+    position: fixed;
+    z-index: 500;
+    top: 10px;
+    right: 10px;
+    width: max-content!important;
+}
+
+.toast .btn-clear {
+    margin-left: 20px!important;
+}
+
+.btn-logout {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
+.panel .panel-header {
+    position: relative;
+}
+
+.channel.active .empty-message {
+    color: rgba(255, 255, 255, .8);
+}
+
+.channel .empty-message {
+    color: #79828f;
+}
+
+.channel-message {
+    display: inline-flex;
+    gap: 5px;
+    align-items: center;
+}
